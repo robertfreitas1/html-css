@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+div{
+
+    display: inline-block;
+    text-align: center;
+
+    background-color: cadetblue;
+    border: 1px solid black;
+    color: white;
+    height: 200px;
+    width: 200px;
+
+}
+.d1:hover {
+    background-color: yellow;
+
+}
+.d2:hover{
+background-color: aqua;
+}
+
+.d3:hover{
+    background-color: black;
+
+}

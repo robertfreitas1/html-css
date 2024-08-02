@@ -4,16 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap');
 
 :root{
-    --fonte1: .sriracha-regular 
-        font-family: "Sriracha", cursive;
-        font-weight: 400;
-        font-style: normal;
 
-    --fonte2: Verdana,  Geneva, Tahoma, sans-serif;
 
-      
-      
-}
+   --fonte1: Verdana,  Geneva, Tahoma, sans-serif;
+
+   --fonte2: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal; ;
+
+    }
 
 *{
 
@@ -24,6 +23,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 
 }
 
@@ -31,6 +31,7 @@ header{
 background-color: black;
   color: white;
   text-align: center;
+  font-family: var(--fonte2);
 }
 
 header > h1{
@@ -38,13 +39,23 @@ header > h1{
     color: white;
     padding-top: 50px;
     font-variant: small-caps;
-    font-size: 2em;
+    font-size: 10vw;
     font-weight: bolder;
 }
 
 header > p {
     padding-bottom: 50px;
 }
+
+
+
+
+p{
+
+    font-family: var(--fonte2);
+}
+
+
 
  a{
     color: white;
@@ -63,6 +74,7 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 3vw;
 
 }
 
@@ -81,8 +93,8 @@ section.imagem{
 }
 
 section.imagem > p {
-
-    width: 500px;
+padding: 5px;
+   display: inline-block;
     background-color: rgba(44, 44, 44, 0.808);
 }
 

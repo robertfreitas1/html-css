@@ -23,6 +23,12 @@
             text-align: center; /*Alinha o texto no centro */
             
         }
+        caption{
+            font-size: 1.5em;
+            font-style: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
 
     
       tr /*Linhas */ > td.posicao /*Dados e class*/{
@@ -31,11 +37,14 @@
 
       a /*Link*/{
         text-decoration: none;  /*Tira a linha fixa que fica em baixo de um link */
+        
       }
 
       a:hover /*Link e pseudo-class */{
         text-decoration: underline; /*Indica que vai apracer um linha embaixo após passar o mouse */
       }
+
+    
 
       .num{
         text-align: right;
@@ -47,11 +56,16 @@
             color: black;
         }
 
+        tbody > tr:nth-child(even) /*2n*/ {
+            background-color:lightgray ;
+        }
+
         
     </style>
 </head>
 <body>
-    <h1>Lista de unidades federativas do Brasil por população</h1> 
+    <h1><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank">Wikipédia</a></h1> 
+    
 
 
     <!--Anatomia para tabelas grandes 
@@ -68,12 +82,16 @@
 
 
     <table>
+
+        <caption><strong>População das Unidades Federativas </strong></caption>
+
         <thead>
+
             <tr>
 
-                    <th>Posição</th>
-                   <th>Unidade Federativa</th>
-                   <th>População</th>
+                    <th scope="col"> Posição </th>
+                   <th scope="col"> Unidade Federativa </th>
+                   <th style=" width: 50px; " > População </th>
             </tr>
         </thead>
 
@@ -319,7 +337,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong> 193.302.702</strong> </td>
             </tr>
         </tfoot>

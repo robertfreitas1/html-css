@@ -16,13 +16,6 @@
             border-collapse: collapse;
         }
 
-        td, th{
-            border: 1px solid black; /* bordar da linha */
-            border-collapse: separate; /*Indica se a linha vai ser separadas ou colapsadas*/
-            padding: 10px; 
-            text-align: center; /*Alinha o texto no centro */
-            
-        }
         caption{
             font-size: 1.5em;
             font-style: bold;
@@ -30,6 +23,25 @@
             background-color: lightgray;
         }
 
+        thead, tfoot{
+            background-color: #EAECF0 ; 
+            color: black;
+        }
+
+        
+        tbody > tr:nth-child(even) /*2n*/ {
+            background-color:lightgray ;
+        }
+
+
+        td, th{
+            border: 1px solid black; /* bordar da linha */
+            border-collapse: separate; /*Indica se a linha vai ser separadas ou colapsadas*/
+            padding: 10px; 
+            text-align: center; /*Alinha o texto no centro */
+            
+        }
+       
     
       tr /*Linhas */ > td.posicao /*Dados e class*/{
         width: 50px; /* Largura */
@@ -51,10 +63,7 @@
       }
 
 
-      thead, tfoot{
-            background-color: #EAECF0 ; 
-            color: black;
-        }
+     
 
         tbody > tr:nth-child(even) /*2n*/ {
             background-color:lightgray ;

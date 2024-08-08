@@ -4,12 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iframe</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+            
+                }
+        iframe {
+            width: 300px;
+            height: 150px;
+            border: 1px dashed black ;
+        }
+       
+    </style>
 </head>
 <body>
     <h1>Testando o uso de Iframes</h1>
     <p>Acessando o site do 
-       
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+
+       <!--Tamanho padfão 300x150 px -->
+
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" width="500" height="300" >
+            <a href="https://www.cursoemvideo.com">Curso em video </a>
+        </iframe>
          para aprender a programar</p>
+
+         <p>  
+
+        O repositório do Robert 
+        <iframe src="https://github.com/robertfreitas1" frameborder="0">  
+            
+        <a href="https://github.com/robertfreitas1" target="_blank"> no GitHub</a>
+        
+        </iframe>
+        também é legal 
+
+        
+
+        <p>
+
+            Video do Miguel 
+
+            <iframe src="<iframe width="560" height="315" src="https://www.youtube.com/embed/9YWmph4XQQk?si=xUWoNq2BFRmzGlbL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+
+
+            ok
+        </p>
 </body>
 </html>
